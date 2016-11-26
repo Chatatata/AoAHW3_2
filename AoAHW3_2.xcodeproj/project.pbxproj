@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5A42661B1DEA418900110D74 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A42661A1DEA418900110D74 /* main.cpp */; };
+		5A42663C1DEA41A300110D74 /* AoAHW3ApplicationDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A4266211DEA41A300110D74 /* AoAHW3ApplicationDelegate.cpp */; };
+		5A42663D1DEA41A300110D74 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A4266241DEA41A300110D74 /* Application.cpp */; };
+		5A42663E1DEA41A300110D74 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A4266271DEA41A300110D74 /* Array.cpp */; };
+		5A42663F1DEA41A300110D74 /* DOMElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A42662A1DEA41A300110D74 /* DOMElement.cpp */; };
+		5A4266401DEA41A300110D74 /* AlgorithmicSortStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A42662E1DEA41A300110D74 /* AlgorithmicSortStrategy.cpp */; };
+		5A4266411DEA41A300110D74 /* HeapSortStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A4266301DEA41A300110D74 /* HeapSortStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +30,20 @@
 
 /* Begin PBXFileReference section */
 		5A4266171DEA418900110D74 /* AoAHW3_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AoAHW3_2; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A42661A1DEA418900110D74 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5A42661A1DEA418900110D74 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Instigater/Development/AoAHW3_2/AoAHW3_2/Supporting Files/main.cpp"; sourceTree = "<absolute>"; };
+		5A4266211DEA41A300110D74 /* AoAHW3ApplicationDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AoAHW3ApplicationDelegate.cpp; sourceTree = "<group>"; };
+		5A4266221DEA41A300110D74 /* AoAHW3ApplicationDelegate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AoAHW3ApplicationDelegate.hpp; sourceTree = "<group>"; };
+		5A4266241DEA41A300110D74 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		5A4266251DEA41A300110D74 /* Application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		5A4266271DEA41A300110D74 /* Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		5A4266281DEA41A300110D74 /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		5A42662A1DEA41A300110D74 /* DOMElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DOMElement.cpp; sourceTree = "<group>"; };
+		5A42662B1DEA41A300110D74 /* DOMElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DOMElement.hpp; sourceTree = "<group>"; };
+		5A42662C1DEA41A300110D74 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5A42662E1DEA41A300110D74 /* AlgorithmicSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlgorithmicSortStrategy.cpp; sourceTree = "<group>"; };
+		5A42662F1DEA41A300110D74 /* AlgorithmicSortStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmicSortStrategy.hpp; sourceTree = "<group>"; };
+		5A4266301DEA41A300110D74 /* HeapSortStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSortStrategy.cpp; sourceTree = "<group>"; };
+		5A4266311DEA41A300110D74 /* HeapSortStrategy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HeapSortStrategy.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +76,62 @@
 		5A4266191DEA418900110D74 /* AoAHW3_2 */ = {
 			isa = PBXGroup;
 			children = (
-				5A42661A1DEA418900110D74 /* main.cpp */,
+				5A4266211DEA41A300110D74 /* AoAHW3ApplicationDelegate.cpp */,
+				5A4266221DEA41A300110D74 /* AoAHW3ApplicationDelegate.hpp */,
+				5A4266231DEA41A300110D74 /* Bootstrapping */,
+				5A4266261DEA41A300110D74 /* Containers */,
+				5A4266291DEA41A300110D74 /* Models */,
+				5A42662C1DEA41A300110D74 /* PrefixHeader.pch */,
+				5A42662D1DEA41A300110D74 /* Strategies */,
+				5A42663A1DEA41A300110D74 /* Supporting Files */,
 			);
 			path = AoAHW3_2;
+			sourceTree = "<group>";
+		};
+		5A4266231DEA41A300110D74 /* Bootstrapping */ = {
+			isa = PBXGroup;
+			children = (
+				5A4266241DEA41A300110D74 /* Application.cpp */,
+				5A4266251DEA41A300110D74 /* Application.hpp */,
+			);
+			path = Bootstrapping;
+			sourceTree = "<group>";
+		};
+		5A4266261DEA41A300110D74 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				5A4266271DEA41A300110D74 /* Array.cpp */,
+				5A4266281DEA41A300110D74 /* Array.hpp */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		5A4266291DEA41A300110D74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A42662A1DEA41A300110D74 /* DOMElement.cpp */,
+				5A42662B1DEA41A300110D74 /* DOMElement.hpp */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A42662D1DEA41A300110D74 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				5A42662E1DEA41A300110D74 /* AlgorithmicSortStrategy.cpp */,
+				5A42662F1DEA41A300110D74 /* AlgorithmicSortStrategy.hpp */,
+				5A4266301DEA41A300110D74 /* HeapSortStrategy.cpp */,
+				5A4266311DEA41A300110D74 /* HeapSortStrategy.hpp */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		5A42663A1DEA41A300110D74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A42661A1DEA418900110D74 /* main.cpp */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A42663C1DEA41A300110D74 /* AoAHW3ApplicationDelegate.cpp in Sources */,
+				5A4266411DEA41A300110D74 /* HeapSortStrategy.cpp in Sources */,
+				5A42663F1DEA41A300110D74 /* DOMElement.cpp in Sources */,
+				5A42663E1DEA41A300110D74 /* Array.cpp in Sources */,
 				5A42661B1DEA418900110D74 /* main.cpp in Sources */,
+				5A4266401DEA41A300110D74 /* AlgorithmicSortStrategy.cpp in Sources */,
+				5A42663D1DEA41A300110D74 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
