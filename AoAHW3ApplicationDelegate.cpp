@@ -17,7 +17,7 @@
 #include <chrono>
 #include <fstream>
 
-#include "Models/DOMElement.hpp"
+#include "Models/Player.hpp"
 #include "Strategies/HeapSortStrategy.cpp"
 
 UInt16
@@ -30,7 +30,7 @@ AoAHW3ApplicationDelegate::applicationDidStart(const Container::Array<String> &a
     using Container::Array;
     
     if (arguments.getLength() == 3) {
-        Array<DOMElement> array;
+        Array<Player> array;
         
         InputFileStream inputFile("ClanA.txt");
         OutputFileStream outputFile("A_sorted.txt");
@@ -41,10 +41,10 @@ AoAHW3ApplicationDelegate::applicationDidStart(const Container::Array<String> &a
             inputFile >> feed;
             inputFile >> feed;
             
-            array.append(DOMElement(i, std::stoll(feed)));
+            array.append(Player(i, std::stoll(feed)));
         }
         
-        HeapSortStrategy<DOMElement> hss(array);
+        HeapSortStrategy<Player> hss(array);
         
         auto startTime = HighResolutionClock::now();
         
@@ -56,13 +56,13 @@ AoAHW3ApplicationDelegate::applicationDidStart(const Container::Array<String> &a
         
         for (UInt64 i = 0; i < hss.getArray().getLength() - 1; ++i) {
             outputFile
-            << hss.getArray()[i].index
+            << hss.getArray()[i].getID()
             << "\t"
-            << hss.getArray()[i].data
+            << hss.getArray()[i].getCharismaPoint()
             << std::endl;
-            }
+        }
             
-            return 0;
+        return 0;
     } else if (arguments.getLength() == 2) {
         fprintf(stderr, "not implemented\n");
         

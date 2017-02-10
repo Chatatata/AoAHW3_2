@@ -8,7 +8,8 @@
 
 #include "DOMElement.hpp"
 
-DOMElement::DOMElement(const UInt64 index, const UInt64 data)
+DOMElement::DOMElement(const UInt64 index,
+                       const UInt64 data)
 : index(index), data(data)
 {
     //  Empty implementation

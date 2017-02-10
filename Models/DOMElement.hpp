@@ -17,8 +17,9 @@ public:
     DOMElement &operator = (const DOMElement &other);
     Boolean operator < (const DOMElement &other) const noexcept;
     
+    operator UInt64() const noexcept;
+  
+protected:
     UInt64 index;
     UInt64 data;
-    
-    operator UInt64() const noexcept;
 };
